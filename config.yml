@@ -1,0 +1,178 @@
+file:
+    storagePath: C:\testpath\ # The base path to your video storage
+    directories: # Filesystem directories to build
+        - Cameras
+        - Ext Audio
+        - Screen Captures
+        - Mattes
+        - Static Images
+        - Motion Graphics
+        
+    binsOnly: # Bins to add, that do not appear on the filesystem
+        - Music
+        - Sound Effects
+        - Compound Clips
+
+resolve:
+
+    # If you want to have script build the timeline
+    
+    buildTimeline: Y # Set to N and it will skip this
+    masterFolder: Camera A # Name of the folder that will trigger build
+
+    # Page to switch to at the end of script execution
+    openPage: edit # media, edit, fusion, color, fairlight or deliver (no cut)
+
+    project:
+        name: Test project # Project name, else it will take script input
+        frameRate: 23.97 # Framerate of your project
+        width: 1920 # Width of your project in pixels
+        height: 1080 # Height of your project in pixels
+
+        timeline:
+            timelineName: Master Timeline # If you want to build timeline, this is the default
+       
+        # Extended variables. These are the defaults, none are activated yet but you can add them in...
+        
+        audioCaptureNumChannels: 2
+        audioOutputHasTimecode: 0
+        audioPlayoutNumChannels: 2
+        colorAcesIDT: No Input Transform
+        colorAcesNodeLUTProcessingSpace: acesccAp1
+        colorAcesODT: No Output Transform
+        colorGalleryStillsLocation: E:\.gallery
+        colorGalleryStillsNamingCustomPattern: 
+        colorGalleryStillsNamingEnabled: 0
+        colorGalleryStillsNamingPattern: clipName
+        colorGalleryStillsNamingWithStillNumber: off
+        colorKeyframeDynamicsEndProfile: 1
+        colorKeyframeDynamicsStartProfile: 1
+        colorLuminanceMixerDefaultZero: 0
+        colorScienceMode: davinciYRGB
+        colorSpaceInput: Rec.709 Gamma 2.4
+        colorSpaceInputGamma: 
+        colorSpaceOutput: Rec.709 Gamma 2.4
+        colorSpaceOutputGamma: 
+        colorSpaceOutputGamutMapping: none
+        colorSpaceOutputGamutSaturationKnee: 0.9
+        colorSpaceOutputGamutSaturationMax: 1
+        colorSpaceOutputToneLuminanceMax: 100
+        colorSpaceOutputToneMapping: none
+        colorSpaceTimeline: Rec.709 Gamma 2.4
+        colorSpaceTimelineGamma: 
+        colorUseBGRPixelOrderForDPX: 0
+        colorUseContrastSCurve: 1
+        colorUseLegacyLogGrades: 2
+        colorUseLocalVersionsAsDefault: 1
+        colorUseStereoConvergenceForEffects: 0
+        colorVersion10Name: 
+        colorVersion1Name: 
+        colorVersion2Name: 
+        colorVersion3Name: 
+        colorVersion4Name: 
+        colorVersion5Name: 
+        colorVersion6Name: 
+        colorVersion7Name: 
+        colorVersion8Name: 
+        colorVersion9Name: 
+        hdr10PlusControlsOn: 0
+        hdrDolbyControlsOn: 0
+        hdrDolbyMasterDisplay: 
+        hdrDolbyVersion: 4.0
+        hdrMasteringLuminanceMax: 1000
+        hdrMasteringOn: 0
+        imageDeinterlaceQuality: normal
+        imageEnableFieldProcessing: 0
+        imageMotionEstimationMode: standardFaster
+        imageMotionEstimationRange: medium
+        imageResizeAntialiasMode: auto
+        imageResizeMode: sharper
+        imageRetimeInterpolation: nearest
+        limitAudioMeterAlignLevel: 0
+        limitAudioMeterDisplayMode: post_fader
+        limitAudioMeterHighLevel: -5
+        limitAudioMeterLUFS: -23
+        limitAudioMeterLoudnessScale: ebu_9_scale
+        limitAudioMeterLowLevel: -10
+        limitBroadcastSafeLevels: 20_120
+        limitBroadcastSafeOn: 0
+        limitSubtitleCPL: 60
+        limitSubtitleCaptionDurationSec: 3
+        perfAutoRenderCacheAfterTime: 5
+        perfAutoRenderCacheComposite: 0
+        perfAutoRenderCacheEnable: 1
+        perfAutoRenderCacheFuEffect: 1
+        perfAutoRenderCacheTransition: 0
+        perfCacheClipsLocation: CacheClip
+        perfOptimisedCodec: dnxhd_hqx_12b
+        perfOptimisedMediaOn: 1
+        perfOptimizedResolutionRatio: auto
+        perfProxyResolutionRatio: original
+        perfRenderCacheCodec: dnxhd_hqx_12b
+        perfRenderCacheMode: none
+        superScaleNoiseReduction: Medium
+        superScaleSharpness: Medium
+        timelineFrameRate: 23.976
+        timelineFrameRateMismatchBehavior: resolve
+        timelineInputResMismatchBehavior: scaleToFit
+        timelineInputResMismatchCustomPreset: None
+        timelineInputResMismatchUseCustomPreset: 0
+        timelineOutputPixelAspectRatio: square
+        timelineOutputResMatchTimelineRes: 1
+        timelineOutputResMismatchBehavior: centerCrop
+        timelineOutputResMismatchCustomPreset: None
+        timelineOutputResMismatchUseCustomPreset: 0
+        timelineOutputResolutionHeight: 1080
+        timelineOutputResolutionWidth: 1920
+        timelinePixelAspectRatio: square
+        timelinePlaybackFrameRate: 23.97
+        timelineResolutionHeight: 1080
+        timelineResolutionWidth: 1920
+        timelineSaveThumbsInProject: 0
+        videoCaptureCodec: 
+        videoCaptureFormat: 
+        videoCaptureIngestHandles: 0
+        videoCaptureLocation: 
+        videoCaptureMode: video_audio
+        videoDataLevels: video
+        videoDeckAdd32Pulldown: 0
+        videoDeckBitDepth: 10
+        videoDeckFormat: HD 1080PsF 24
+        videoDeckNonAutoEditFrames: 0
+        videoDeckOutputSyncSource: auto
+        videoDeckPrerollSec: 5
+        videoDeckSDIConfiguration: none
+        videoDeckUse444SDI: 0
+        videoDeckUseAudoEdit: 1
+        videoDeckUseStereoSDI: 0
+        videoMonitorBitDepth: 10
+        videoMonitorFormat: PAL
+        videoMonitorSDIConfiguration: dual_link
+        videoMonitorScaling: bilinear
+        videoMonitorUse444SDI: 0
+        videoMonitorUseHDROverHDMI: 0
+        videoMonitorUseLevelA: 0
+        videoMonitorUseRec601For422SDI: 0
+        videoMonitorUseStereoSDI: 0
+        videoPlayoutAudioFramesOffset: 0
+        videoPlayoutBatchHeadDuration: 8
+        videoPlayoutBatchTailDuration: 8
+        videoPlayoutLTCFramesOffset: 0
+        videoPlayoutMode: video_audio
+        videoPlayoutShowLTC: 0
+        videoPlayoutShowSourceTimecode: 0
+        superScale: 1.0
+                
+    presets:
+        1:
+            Name: Current Project
+            Width: 1920.0
+            Height: 1080.0
+        2:
+            Name: System Config
+            Width: 1920.0
+            Height: 1080.0
+        3:
+            Name: guest default config
+            Width: 1920.0
+            Height: 1080.0
